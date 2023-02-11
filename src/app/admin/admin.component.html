@@ -1,0 +1,18 @@
+
+ <div class="box">
+<form [formGroup]="adminForm" class="login">
+    <h3 style="text-align: center ;">ADMIN</h3>
+    
+    <span>Username</span>
+    <input type="text" formControlName="uname" type="text" name="username"  id="uname" required="required" autocomplete="off">
+    <div class="val" *ngIf="this.adminForm.get('uname')?.errors && this.adminForm.get('uname')?.touched" style="color: red;">Invalid user name</div>
+    
+    <span>Password</span>
+    <input  formControlName="pswd" type="password"  name="password" id="pswd" required="required" autocomplete="off">
+    <div class="val" *ngIf="this.adminForm.get('pswd')?.errors && this.adminForm.get('pswd')?.touched" style="color: red;">Invalid password</div>
+   
+
+    <button (click)="adminlogin()">Login</button>
+  </form>
+</div>
+  

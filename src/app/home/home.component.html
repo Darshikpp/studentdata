@@ -1,0 +1,54 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"></a>
+      <img  src="../../assets/images/luminar10.jpeg" class="ms-2" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="display: flex; justify-content: flex-end;" class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <button style="width: 150px; height: 50px;" class="nav-link bg-light">Home</button>
+          </li>
+          <li class="nav-item">
+            <button style="width: 150px; height: 50px;" class="nav-link bg-light" routerLink="/course">Courses</button>
+          </li>
+           <li class="nav-item">
+            <button  style="width: 150px; height: 50px;" class="nav-link bg-light" routerLink="/view">Student Details</button>
+          </li>   
+           <li class="nav-item">
+            <button  style="width: 150px; height: 50px;" class="nav-link bg-danger" (click)="logout()" >Log Out</button>
+          </li>   
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  
+
+    <div style="margin-top: 90px; max-height: 320px;" class="all-container">
+
+    <div class="container">
+        <h1>Kerala's No.1 </h1>
+        <h2>Software Training Institute in Kochi (Cochin) |Luminar Technolab </h2>
+        <h3>Luminar Technolab is a No.1 Software Training Institute in Kochi & Mavoor Road Calicut,<br> offering you Job Oriented courses on Data Science, Data Analytics, Machine Learning, Python, Big Data &</h3>
+        <!-- <button>student register form</button> -->
+        <div class="d-grid gap-2 d-md-block">
+          <button   style="margin-top: 20px;" class="btn btn-primary" type="button" routerLink="/dashboard">Student Register Form</button>
+          
+        </div>
+
+    </div>
+<div class="scroll-container">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img style="margin-top: 40px; max-width: 600px;" src="../../assets/images/lumi8.png" class="d-block" alt="...">
+      </div>
+     </div>
+   </div>
+</div>
+  

@@ -1,0 +1,45 @@
+<div class="body">
+   <div class="luminar" ><h3 class="i"> L u m i n a r <br><h4 class="am">T e c h n o l a b</h4> </h3></div>
+
+
+
+    <div class="box">
+        <form [formGroup]="registerForm">
+        <div class="form">
+            <div class="logo">
+                <img src="../../assets/images/lumii22.jpg" alt="bank" height="60px" width="60px" style="border-radius: 50%;">
+            </div>
+            <h2>Sign up</h2>
+            <div class="inputBox">
+                <input type="text" formControlName="uname" type="text" name="username"  id="uname" required="required" autocomplete="off">
+                <div class="val" *ngIf="this.registerForm.get('uname')?.errors && this.registerForm.get('uname')?.touched" style="color: red;">Invalid user name</div>
+
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input  formControlName="pswd" type="password"  name="password" id="pswd" required="required" autocomplete="off">
+                <div class="val" *ngIf="this.registerForm.get('pswd')?.errors && this.registerForm.get('pswd')?.touched" style="color: red;">Invalid password</div>
+
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input formControlName="email" type="text" required="required" autocomplete="off">
+                <div class="val" *ngIf="this.registerForm.get('email')?.errors && this.registerForm.get('email')?.touched" style="color: red;">Invalid email</div>
+
+                <span>E-mail</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a >Forgot Password</a>
+                <a routerLink="/">Sign in</a>
+
+            </div>
+
+            <input (click)="register()" type="submit" value="Register">
+        </div>
+    </form>
+  </div>
+    
+</div>

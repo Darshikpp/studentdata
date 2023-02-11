@@ -1,0 +1,37 @@
+<div class="body">
+
+<div class="box">
+    <!-- <button class="admin1" style="color: aliceblue; position: absolute; z-index: 99999;">ADMIN</button> -->
+   
+    <form [formGroup]="loginForm">
+        <div class="form">
+            <div class="logo">
+                <img src="../../assets/images/lumii22.jpg" alt="bank" height="60px" width="60px" style="border-radius: 60%;">
+            </div>
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input type="text" formControlName="uname" type="text" name="username"  id="uname" required="required" autocomplete="off">
+                <div class="val" *ngIf="this.loginForm.get('uname')?.errors && this.loginForm.get('uname')?.touched" style="color: red;">Invalid user name</div>
+
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox"> 
+                <input  formControlName="pswd" type="password"  name="password" id="pswd" required="required" autocomplete="off">
+                <div class="val" *ngIf="this.loginForm.get('pswd')?.errors && this.loginForm.get('pswd')?.touched" style="color: red;">Invalid password</div>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a routerLink="/register">Sign up</a>
+                <a routerLink="/admin"style="font-size: 20px; cursor: pointer;">Admin</a>
+
+            </div>
+
+            <input (click)="login()" type="submit" value="Login">
+           
+        </div>
+
+    </form>
+    </div>
+</div>

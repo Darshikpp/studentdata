@@ -1,0 +1,86 @@
+
+
+ 
+    <body>
+      <div class="container">
+        <div class="title">Student Details</div>
+        <div class="content">
+            <form  [formGroup]="displayForm" (ngSubmit)="Onsubmit()">
+            <div class="user-details">
+
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" formControlName="fullname"name="fullname"  id="fullname" required="required" autocomplete="off">
+                <div *ngIf="this.displayForm.get('fullname')?.errors && this.displayForm.get('fullname')?.touched" style="color: red;">Invalid Name</div>
+
+              </div>
+
+              <div class="input-box">
+                <span class="details">Course Name</span>
+                <input type="text" placeholder="Enter your course name" formControlName="coursename"name="coursename"  id="coursename" required="required" autocomplete="off">
+                <div *ngIf="this.displayForm.get('coursename')?.errors && this.displayForm.get('coursename')?.touched" style="color: red;">Invalid Course</div>
+
+
+
+              </div>
+
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input placeholder="Enter your email" formControlName="email" type="text" required="required" autocomplete="off">
+                <div class="val" *ngIf="this.displayForm.get('email')?.errors && this.displayForm.get('email')?.touched" style="color: red;">Invalid email</div>
+
+                
+              </div>
+
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input formControlName="phonenumber" type="text" name="phonenumber" placeholder= "Phone Number" id="phonenumber">
+                <div *ngIf="this.displayForm.get('phonenumber')?.errors && this.displayForm.get('phonenumber')?.touched" style="color: red;">Invalid Phone number</div>
+    
+              </div>
+
+              <div class="input-box">
+                <span class="details">Address</span>
+                <input type="text" placeholder="Enter your Address" formControlName="address"name="address"  id="address" required="address" autocomplete="off">
+                <div *ngIf="this.displayForm.get('address')?.errors && this.displayForm.get('address')?.touched" style="color: red;">Invalid Address</div>
+
+              </div>
+
+              <div class="input-box">
+                <span class="details">Qualification</span>
+                <input type="text" placeholder="Enter Qualification" formControlName="city"name="city"  id="city" required="required" autocomplete="off">
+                <div *ngIf="this.displayForm.get('city')?.errors && this.displayForm.get('city')?.touched" style="color: red;">Invalid Name</div>
+
+              </div>
+
+            </div>
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1" >
+              <input type="radio" name="gender" id="dot-2">
+
+              <input type="checkbox" formControlName="radio" name="gender"  id="dot-3"> &nbsp; Have you paid full fees ?
+              <div *ngIf="submitted && check.radio.errors" style="color: red;">required</div>
+
+             
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+             
+              </div>
+            </div>
+            <div class="button">
+              <input (click)="display()"type="submit" value="Submit">
+            </div>
+          </form>
+        
+      </div>
+    </div>
+    </body>
+    
