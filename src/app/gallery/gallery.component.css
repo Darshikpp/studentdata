@@ -1,0 +1,57 @@
+
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Andika:wght@400;700&family=Anton&family=Bangers&family=Bebas+Neue&family=Berkshire+Swash&family=Bowlby+One+SC&family=Bungee+Spice&family=Creepster&family=Dancing+Script:wght@500&family=Frank+Ruhl+Libre:wght@600&family=Inter:wght@400;500&family=Luckiest+Guy&family=Ms+Madi&family=Oswald:wght@300;700&family=Patua+One&family=Poppins:ital,wght@0,200;0,400;1,200&family=Rampart+One&family=Roboto:wght@500&family=Rubik&family=Rubik+Glitch&family=Secular+One&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  h2{
+    color: aliceblue;
+    /* padding-top: 150px; */
+    font-family: 'Patua One', cursive;
+    }
+  
+  .box {
+    width: 100%;
+    height: 100vh;
+    background-color:#000;
+   display:grid;
+    place-items:center;
+  }
+  img {
+    width: 30%;
+    /* height: 100%; */
+    object-fit:cover;
+   -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+  }
+  .containerr {
+    max-width:600px;
+    max-height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    
+    
+  }
+  .containerr:hover img {
+    opacity:0.3;
+  }
+  .containerr img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }
+
+
+
+
+
+
+  

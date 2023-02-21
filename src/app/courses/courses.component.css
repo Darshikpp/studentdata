@@ -13,6 +13,7 @@ body{
     font-weight: 400;
     background: #ffffff
 }
+
 h1{
     font-weight: bold;
     color: whitesmoke;
@@ -50,6 +51,7 @@ a{
     padding-left: 15px;
     flex: 0 0 100%;
     max-width: 100%;
+
 }
 .section-title{
     position: relative;
@@ -73,6 +75,7 @@ a{
 .effect .effect-img{
     font-size: 0;
     overflow: hidden;
+   
     
 }
 .effect .effect-img img{
@@ -93,7 +96,7 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(92, 8, 107, 0.901);
     overflow: hidden;
     transition: all .3s ease-in;
     opacity: 0;
@@ -218,3 +221,17 @@ a{
         max-width: 1140px;
     }
 }
+
+button{
+    color: #000000;
+    font-weight: bold;
+    border-radius: 25%;
+    background-color: rgb(239, 231, 231);
+    /* margin-left: 700px; */
+    /* margin-top: 5px; */
+    margin: 0 auto;
+}
+
+ button:hover {
+    background-color: rgb(227, 8, 8);
+ }

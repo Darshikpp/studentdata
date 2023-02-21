@@ -1,0 +1,209 @@
+main {
+    padding: 0 64px 64px;
+  }
+  
+  .box{
+    background-color: #4e077a;
+
+
+  }
+  .card {
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 700px;
+    height: 900px;
+    max-width: 100%;
+    min-height: 900px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://t3.ftcdn.net/jpg/05/65/97/52/360_F_565975296_AJJ6JlEnUz9HsvRRRpLdaSicvpcYobmn.jpg);
+    background-size: cover;
+  }
+  h4{
+    text-align: center;
+  }
+  .info {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    background-color: #0e0e0ffe;
+	  color: #f5eeee;
+    font-weight: bold;
+
+
+    transform: translateY(100%)
+      translateY(-88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .info:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(https://www.clariwell.in/resources/best-software-testing-courses-in-pune.webp);
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%)
+      translateY(88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .card:hover .info,
+  .card:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
+ p{
+    color: rgb(235, 226, 226);
+ }
+ h6{
+    color: aliceblue;
+ }
+  
+  .title {
+    margin: 0;
+    padding: 24px;
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(247, 241, 241, 0.87);
+    font-weight: bolder;
+  }
+  .software{
+    margin: 0;
+    padding: 14px;
+    font-size: 40px;
+    line-height: 1;
+    
+    font-weight: bolder;
+  
+    text-align: center;
+    color: rgba(240, 233, 233, 0.87)
+  }
+  h5{
+    padding: 15px;
+  }
+  
+  .description {
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* General layout and typography stuff */
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+  
+  * {
+    box-sizing: border-box;
+    position: relative;
+    transition: all .3s ease
+  }
+  
+  html {
+    font-size: 16px
+  }
+  
+  body {
+    font-family: Open Sans, Verdana, sans-serif;
+    color: rgba(251, 247, 247, 0.87);
+    font-weight: 400;
+    line-height: 1.45
+  }
+  
+  body,
+  header {
+   
+	color: #4a0777;
+  }
+  
+  header {
+    padding: 40px;
+    min-height: 200px;
+    text-align: center;
+    color: rgba(240, 236, 236, 0.87)
+  }
+  
+  header > * {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  header>:last-child {
+    margin-bottom: 0
+  }
+  
+  h1 {
+    margin-bottom: 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+    
+    font-size: 2.618em;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(251, 249, 249);
+    
+
+  }
+  
+  @media (min-width:800px) {
+    h1 {
+      font-size: 4.236em;
+      font-weight: 300
+    }
+  }
+  
+  p {
+    margin-bottom: 1.3em;
+    line-height: 1.618
+  }
+  
+  @media (min-width:800px) {
+    p {
+      font-size: 1.3em
+    }
+  }
+  
+  a {
+    color: #e03616;
+    text-decoration: none
+  }
+  
+
+
+
+
+
+
+  button{
+    color: #000000;
+    font-weight: bold;
+    border-radius: 25%;
+    background-color: blueviolet;
+    margin-left: 280px;
+}
+
+ button:hover {
+    background-color: #df0707;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+  

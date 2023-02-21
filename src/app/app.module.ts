@@ -12,6 +12,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ViewComponent } from './view/view.component';
 import { AdminComponent } from './admin/admin.component';
 import { CoursesComponent } from './courses/courses.component';
+import { TestingComponent } from './testing/testing.component';
+import { DatascienceComponent } from './datascience/datascience.component';
+import { AspComponent } from './asp/asp.component';
+import { PythonComponent } from './python/python.component';
+import { MearnComponent } from './mearn/mearn.component';
+import { FlutterComponent } from './flutter/flutter.component';
+import { GalleryComponent } from './gallery/gallery.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +30,14 @@ import { CoursesComponent } from './courses/courses.component';
     HomeComponent,
     ViewComponent,
     AdminComponent,
-    CoursesComponent
+    CoursesComponent,
+    TestingComponent,
+    DatascienceComponent,
+    AspComponent,
+    PythonComponent,
+    MearnComponent,
+    FlutterComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
